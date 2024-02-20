@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-image: url('https://cms.pixbit.in/uploads/BLOG_1677044255_a5245d56f0.jpg');
+        }
+
+        form {
+            padding: 10px;
+            font-style: italic;
+            font-size: 28px;
+        }
+
+        h1 {
+            display: block;
+            font: italic;
+            font-size: 50px;
+            margin: 5px;
+            padding: 10px;
+            color: antiquewhite;
+        }
+
+        h1:hover {
+            color: black;
+        }
+
+        input {
+            border: 2px solid darkcyan;
+        }
+
+        button {
+            display:inline;
+            background-color: blue;
+            color: aliceblue;
+            text-align: center;
+            font-size: 25px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>REGISTRATION FORM</h1>
+    </center>
+    <form>
+        <label>Name</label>
+        <input type="text"><br><br>
+        <label>Age</label>
+        <input type="number"><br><br>
+        <label>Gender</label><br><br>
+        <input type="radio" value="male" name="1">
+        <label>Male</label>
+        <input type="radio" value="female" name="1">
+        <label>Female</label><br><br>
+        <label>Phone no</label>
+        <input type="tel"><br><br>
+        <label>Username</label>
+        <input type="text" required><br><br>
+        <label>Password</label>
+        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br><br>
+        <button type="Submit">Sumbit</button>
+    </form>
+</body>
+
+</html>
